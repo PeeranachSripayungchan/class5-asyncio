@@ -1,10 +1,12 @@
 import asyncio
 import time
 
+# Function แสดงเวลาที่ใช้ในการ Computing
 async def sleep():
     print(f'Time: {time.time() - start:.2f}')
     time.sleep(1)
 
+# Function ที่ใช้ว่าเป็น Task อะไร
 async def sum(name, numbers):
     total = 0
     for number in numbers:
