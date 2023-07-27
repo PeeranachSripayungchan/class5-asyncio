@@ -1,9 +1,10 @@
 import asyncio
 import time
 
+# Function แสดงเวลาที่ใช้ในการ Computing
 async def sleep():
     print(f'Time: {time.time() - start:.2f}')
-    await asyncio.sleep(1)
+    await asyncio.sleep(1) # จะต้องใช้ asyncio เพื่อทำให้เป็นการ computing แบบ asynchronous
 
 async def sum(name, numbers):
     total = 0
