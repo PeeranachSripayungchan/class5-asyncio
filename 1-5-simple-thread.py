@@ -2,10 +2,12 @@ import asyncio
 import time
 from concurrent.futures.thread import ThreadPoolExecutor
 
+# Function หาค่าเวลาที่ใช้ในการ Computing
 def sleep():
     print(f'Time: {time.time() - start:.2f}')
     time.sleep(1)
 
+# Function ที่ใช้ว่าเป็น Task อะไรและแสดงเวลาที่ใช้ในการ Computing
 async def sum(name, numbers):
     _executor = ThreadPoolExecutor(2)
     total = 0
@@ -34,7 +36,7 @@ print(f'Time: {end-start:.2f} sec')
 # Time: 0.01
 # Time: 0.01
 # Task A: Computing 1+2
-# Task B: Computing 1+2Time: 1.02
+# Task B: Computing 1+2
 
 # Time: 1.02
 # Task A: Sum = 3
