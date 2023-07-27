@@ -6,7 +6,7 @@ async def sleep():
     print(f'Time: {time.time() - start:.2f}')
     time.sleep(1)
 
-# Function ที่ใช้ว่าเป็น Task อะไร
+# Function ที่ใช้ว่าเป็น Task อะไรและแสดงเวลาที่ใช้ในการ Computing
 async def sum(name, numbers):
     total = 0
     for number in numbers:
