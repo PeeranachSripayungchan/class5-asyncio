@@ -7,7 +7,7 @@ def sleep():
     print(f'Time: {time.time() - start:.2f}')
     time.sleep(1)
 
-# Function ที่ใช้ว่าเป็น Task อะไรและแสดงเวลาที่ใช้ในการ Computing
+# Function ที่ใช้ว่าเป็น Task อะไรและแสดงเวลาที่ใช้ในการ Computing และทำโดยการใช้ Thread
 async def sum(name, numbers):
     _executor = ThreadPoolExecutor(2)
     total = 0
@@ -29,6 +29,7 @@ loop.close()
 
 end = time.time()
 print(f'Time: {end-start:.2f} sec')
+# Task A กับ B run พร้อมกันแต่ Task B มีจำนวน Task มากกว่าจึงทำเสร็จทีหลัง Task A
 
 # Result
 # Task A: Computing 0+1
