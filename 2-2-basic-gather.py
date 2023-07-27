@@ -7,6 +7,7 @@ async def hello(i):
     await asyncio.sleep(4)
     print(f"{time.ctime()} hello {i} done")
 
+# Function สร้าง Task ทั้ง 2 Task 
 async def main():
     task1 = asyncio.create_task(hello(1))
     #await asyncio.sleep(3)
