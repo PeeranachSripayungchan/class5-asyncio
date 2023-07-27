@@ -1,10 +1,12 @@
 import asyncio
 import time
 
+# Function หาค่าเวลาที่ใช้ในการ Computing
 async def sleep():
     print(f'Time: {time.time() - start:.2f}')
     await asyncio.sleep(1)
 
+# Function ที่ใช้ว่าเป็น Task อะไรและแสดงเวลาที่ใช้ในการ Computing
 async def sum(name, numbers):
     total = 0
     for number in numbers:
@@ -13,6 +15,7 @@ async def sum(name, numbers):
         total += number
     print(f'Task {name}: Sum = {total}\n')
 
+# Function กำหนดชนิด Task และจำนวน Task
 async def main():
     await asyncio.gather(sum("A", [1, 2]), sum("B", [1, 2, 3]))
 
