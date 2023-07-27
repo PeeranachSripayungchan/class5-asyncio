@@ -43,7 +43,7 @@ def sum(name, numbers):
 
 start = time.time()
 
-# เรียกฟังก์ชั่น sum
+# กำหนดชนิด Task และจำนวน Task
 tasks = [
     sum("A", [1, 2]),
     sum("B", [1, 2, 3]),
