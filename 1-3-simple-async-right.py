@@ -17,6 +17,7 @@ async def sum(name, numbers):
 
 start = time.time()
 
+# Function กำหนดชนิด Task และจำนวน Task
 loop = asyncio.get_event_loop()
 tasks = [
     loop.create_task(sum("A", [1, 2])),
