@@ -1,6 +1,7 @@
 import asyncio
 import time
 
+# Function Factorial
 async def factorial(n):
     f = 1
     for i in range(2, n+1):
@@ -9,6 +10,7 @@ async def factorial(n):
         f *= i
     return f
 
+# การเลือกจำนวน n
 async def main():
     L = await asyncio.gather(factorial(2), factorial(3), factorial(4))
     print(L) # [2, 6, 24]
