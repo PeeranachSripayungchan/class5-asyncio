@@ -29,7 +29,7 @@ loop.close()
 end = time.time()
 print(f'Time: {end-start:.2f} sec')
 
-# Task A กับ B run พร้อมกันแต่ Task B มีจำนวน Task มากกว่า
+# Task A กับ B run พร้อมกันแต่ Task B มีจำนวน Task มากกว่าจึงทำเสร็จทีหลัง Task A
 
 # Result
 # Task A: Computing 0+1
