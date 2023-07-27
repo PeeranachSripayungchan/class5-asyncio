@@ -1,7 +1,7 @@
 import asyncio
 import time
 
-# Function แสดงเวลาที่ใช้ในการ Computing
+# Function หาค่าเวลาที่ใช้ในการ Computing
 async def sleep():
     print(f'Time: {time.time() - start:.2f}')
     time.sleep(1)
