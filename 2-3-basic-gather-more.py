@@ -16,7 +16,7 @@ if __name__ == '__main__':
     start = time.time()
     asyncio.run(main())
     end = time.time()
-    print(f'Time: {end-start:.2f} sec')
+    print(f'Time: {end-start:.2f} sec') # แสดงเวลาที่ใช้ในการ Computing
 
 # Result
 # Wed Jul 26 15:03:04 2023 hello 0 started
