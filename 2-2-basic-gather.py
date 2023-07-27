@@ -1,6 +1,7 @@
 import asyncio
 import time
 
+# Function รายงานผลว่าเริ่มหรือเสร็จแล้ว
 async def hello(i):
     print(f"{time.ctime()} hello {i} started")
     await asyncio.sleep(4)
