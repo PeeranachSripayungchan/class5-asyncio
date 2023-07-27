@@ -33,3 +33,16 @@ if __name__ == "__main__":
     start_time = time.perf_counter()
     asyncio.run(async_io())
     print(f"Finished in {round(time.perf_counter() - start_time)} secs")
+
+# my_compute_time = 5 sec
+# opponent have 24
+# 5 * 24 = 120 secs
+# move_pairs have 30 times
+# 120 * 30 = 3600 secs
+# The entire exhibition takes == 3600 secs
+
+# if opponents = 100
+# 5 * 100 = 500 secs
+# move_pairs have 30 times
+# 500 * 30 = 15000 secs
+# The entire exhibition takes == 15000 secs
